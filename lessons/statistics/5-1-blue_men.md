@@ -7,7 +7,7 @@ The percentage of the male population between the heights of 5'10 and 6'1 is 34%
     mu = 178
     sigma = 7.7
     
-The next step is the compute the CDFs of the upper and lower percentiles found using scipy.stats.norm.cdf. Subtravting the lower percentile from the upper percentile gives us the percentile range (shown below).
+The next step is to compute the CDFs of the upper and lower percentiles found using scipy.stats.norm.cdf. Subtracting the lower percentile from the upper percentile gives us the percentile range (shown below).
     
     upper_cdf = scipy.stats.norm.cdf(upper, loc=mu, scale=sigma)
     lower_cdf = scipy.stats.norm.cdf(lower, loc=mu, scale=sigma)
